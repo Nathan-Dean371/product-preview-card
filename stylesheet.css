@@ -35,10 +35,21 @@
 
     .product-preview
     {
+        width: 35rem;
         grid-template-columns: 1fr 1fr;
         margin-inline: 1rem;
         overflow: hidden;
-        border-radius: 1rem;
+        
+    }
+
+    .desktop-product-img
+    {
+        display: block !important;
+    }
+
+    .mobile-product-img
+    {
+        display: none !important;
     }
 }
 
@@ -58,9 +69,23 @@ body
 
 .product-preview
 {
-    width: 35rem;
+    
     background: white;
+    margin: 1rem;
+    border-radius: 1rem;
+    overflow: hidden;
 }
+
+.desktop-product-img
+{
+    display: none;
+}
+
+.mobile-product-img
+{
+    display: block;
+}
+
 
 .grid-flow
 {
@@ -126,6 +151,11 @@ p
     border-radius: 5px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
+}
+
+.add-to-cart:hover
+{
+    background: hsl(212, 21%, 14%);
 }
 
 .spaced
